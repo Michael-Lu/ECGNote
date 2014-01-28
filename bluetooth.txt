@@ -1,0 +1,11 @@
+ReadFile(pDlg->m_hComm, recvBuf, BufSize, &dwLength, NULL);
+-recvBuf: pointer to a buffer, used to store the packet received from ECGsensor
+-BufSize: The size limit of recvBuf
+-dwLength: The length of packet stored in the recvbuf
+
+GetECGRawData(recvBuf, ECGRawData, dwLength, ECGRawDataSize, CurrentState);
+-recvBuf: pointer to the received packet from the ECGsensor
+-ECGRawData: pointer to the buffer used to store the Raw ECG signal
+-dwLength: length of the received packet from the ECGsensor in number of bytes.
+-ECGRawDataSize: length of the Raw ECG signal stored in the buffer pointed by ECGRawData. The unit is also bytes.
+-CurrentState: The State of the ECGSensor
