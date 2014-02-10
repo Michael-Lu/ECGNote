@@ -1,0 +1,1 @@
+mex -g -DJAS_WIN_MSVC_BUILD -ID:\WinCE-Backup\MyJasperForMatlab\src\libjasper\include -L.\ -ljasper Jp2Decoder.cpp
